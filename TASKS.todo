@@ -1,0 +1,6 @@
+☐ Write README.md
+☐ publish to NPM
+  ☐ setup correct builds for browser target
+☐ cleanup examples
+  ☐ add usage examples
+☐ figure out how to ignore `.vscode' directory from git
