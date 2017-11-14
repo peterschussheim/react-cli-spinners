@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Spinner from './components/Spinner'
-import spinners from './data/spinners'
+import Spinner from '../../dist/index'
+// import Spinner from 'react-spinner'
 
 const appStyle = {
   fontFamily: 'Arial',
@@ -30,24 +30,25 @@ const spinnerStyle = {
   fontFamily: 'Arial'
 }
 
-function createExamples(listOfSpinners) {
-  return Object.keys(listOfSpinners).map((k, i) => (
-    <div style={divStyle} key={i}>
-      {k}: <Spinner style={spinnerStyle} type={k} key={i} />
-    </div>
-  ))
-}
+// function createExamples(listOfSpinners) {
+//   return Object.keys(listOfSpinners).map((k, i) => (
+//     <div style={divStyle} key={i}>
+//       {k}: <Spinner style={spinnerStyle} type={k} key={i} />
+//     </div>
+//   ))
+// }
 
 class App extends Component {
   render() {
-    const elements = createExamples(spinners)
     return (
       <div style={appStyle}>
         <div style={{ margin: '1px' }}>
           <h1>react-spinners</h1>
           <h2>examples</h2>
         </div>
-        <div style={wrapperStyle}>{elements}</div>
+        <div style={wrapperStyle}>
+          <Spinner type="arc" />
+        </div>
       </div>
     )
   }

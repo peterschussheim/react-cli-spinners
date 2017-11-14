@@ -1,13 +1,13 @@
 {
   "name": "react-spinners",
-  "version": "1.0.0",
-  "description":
-    "Assorted text-based activity indicators for usage in React components, based on [cli-spinners](https://github.com/sindresorhus/cli-spinners).",
+  "version": "0.0.0-development",
+  "description": "Assorted text-based activity indicators for usage in React components, based on [cli-spinners](https://github.com/sindresorhus/cli-spinners).",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "prepublish": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "echo \"Error: no deploy script specified\" && exit 1",
@@ -16,25 +16,39 @@
   "directories": {
     "example": "examples"
   },
-  "keywords": ["spinners", "react"],
-  "files": ["dist"],
-  "author":
-    "Peter Schussheim <peter@schussheim.com> (https://peterschussheim.com/)",
+  "keywords": [
+    "spinners",
+    "react"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Peter Schussheim <peter@schussheim.com> (https://peterschussheim.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterschussheim/prop-styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/peterschussheim/react-spinners/issues"
+  },
+  "homepage": "https://github.com/peterschussheim/react-spinners#readme",
   "license": "AGPL-3.0",
   "peerDependencies": {
     "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
     "react-dom": "^0.14.9 || ^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
-    "rollup": "0.51.5",
-    "rollup-plugin-json": "2.3.0",
     "babel-core": "6.26.0",
     "babel-plugin-external-helpers": "6.22.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
+    "rollup": "0.51.5",
     "rollup-plugin-babel": "3.0.2",
     "rollup-plugin-commonjs": "8.2.6",
-    "rollup-plugin-node-resolve": "3.0.0"
-  }
+    "rollup-plugin-json": "2.3.0",
+    "rollup-plugin-node-resolve": "3.0.0",
+    "semantic-release": "^8.2.0"
+  },
+  "dependencies": {}
 }
