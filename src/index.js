@@ -1,6 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import spinners from '../data/spinners'
+import spinners from './spinners.json'
 
 class Spinner extends React.Component {
   constructor(props) {

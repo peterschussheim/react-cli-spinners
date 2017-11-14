@@ -3,15 +3,38 @@
   "version": "1.0.0",
   "description":
     "Assorted text-based activity indicators for usage in React components, based on [cli-spinners](https://github.com/sindresorhus/cli-spinners).",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "prepublish": "npm run build",
+    "predeploy": "cd example && npm install && npm run build",
+    "deploy": "echo \"Error: no deploy script specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "directories": {
     "example": "examples"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": ["spinners", "react"],
+  "files": ["dist"],
   "author":
     "Peter Schussheim <peter@schussheim.com> (https://peterschussheim.com/)",
-  "license": "AGPL-3.0"
+  "license": "AGPL-3.0",
+  "peerDependencies": {
+    "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
+    "react-dom": "^0.14.9 || ^15.0.0 || ^16.0.0"
+  },
+  "devDependencies": {
+    "rollup": "0.51.5",
+    "rollup-plugin-json": "2.3.0",
+    "babel-core": "6.26.0",
+    "babel-plugin-external-helpers": "6.22.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "rollup-plugin-babel": "3.0.2",
+    "rollup-plugin-commonjs": "8.2.6",
+    "rollup-plugin-node-resolve": "3.0.0"
+  }
 }
