@@ -1,7 +1,7 @@
-☐ Write README.md
 ☐ publish to NPM
 ☐ setup correct builds for browser target
 ☐ cleanup examples
   ☐ add usage examples
 ☐ add propTypes
-☐ figure out how to ignore `.vscode' directory from git
+✔ Write README.md @done (2017-11-14 14:56:06)
+✔ figure out how to ignore `.vscode' directory from git @done (2017-11-14 14:55:51)

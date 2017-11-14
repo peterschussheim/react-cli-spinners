@@ -1,16 +1,17 @@
 {
   "name": "react-spinners",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
-    "react-scripts": "1.0.17"
+  "version": "1.0.0",
+  "description":
+    "Assorted text-based activity indicators for usage in React components, based on [cli-spinners](https://github.com/sindresorhus/cli-spinners).",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["spinners", "react"],
+  "author":
+    "Peter Schussheim <peter@schussheim.com> (https://peterschussheim.com/)",
+  "license": "AGPL-3.0"
 }
