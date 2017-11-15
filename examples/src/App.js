@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Spinner from '../../dist/index'
+import Spinner from './lib'
 // import Spinner from 'react-spinner'
 
 const appStyle = {
@@ -49,6 +49,9 @@ class App extends Component {
         <div style={wrapperStyle}>
           <Spinner type="arc" />
         </div>
+        <button style={wrapperStyle}>
+          <Spinner type="christmas" />
+        </button>
       </div>
     )
   }
