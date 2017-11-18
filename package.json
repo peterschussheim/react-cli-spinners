@@ -1,6 +1,6 @@
 {
   "name": "react-cli-spinners",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Assorted text-based activity indicators for usage in React components, based on [cli-spinners](https://github.com/sindresorhus/cli-spinners).",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
