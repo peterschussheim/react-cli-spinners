@@ -1,25 +1,27 @@
 {
   "name": "react-cli-spinners",
-  "version": "0.0.0-development",
-  "description":
-    "Assorted text-based activity indicators for usage in React components, based on [cli-spinners](https://github.com/sindresorhus/cli-spinners).",
+  "version": "0.0.0",
+  "description": "Assorted text-based activity indicators for usage in React components, based on [cli-spinners](https://github.com/sindresorhus/cli-spinners).",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "semantic-release":
-      "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "deploy": "echo \"Error: no deploy script specified\" && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "directories": {
     "example": "examples"
   },
-  "keywords": ["spinners", "react"],
-  "files": ["dist"],
-  "author":
-    "Peter Schussheim <peter@schussheim.com> (https://peterschussheim.com/)",
+  "keywords": [
+    "spinners",
+    "react"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Peter Schussheim <peter@schussheim.com> (https://peterschussheim.com/)",
   "repository": {
     "type": "git",
     "url": "https://github.com/peterschussheim/react-cli-spinners.git"
