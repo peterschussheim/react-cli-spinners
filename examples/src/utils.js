@@ -65,3 +65,7 @@ export const examples = {
   arrows,
   misc
 }
+
+export function wait(ms) {
+  return new Promise(r => setTimeout(r, ms));
+}
