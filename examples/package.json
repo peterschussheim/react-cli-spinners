@@ -1,12 +1,13 @@
 {
   "name": "react-cli-spinners-examples",
-  "author":
-    "Peter Schussheim <peter@schussheim.com> (https://peterschussheim.com/)",
+  "author": "Peter Schussheim <peter@schussheim.com> (https://peterschussheim.com/)",
   "license": "AGPL-3.0",
   "version": "0.1.0",
   "dependencies": {
     "react": "^16.1.1",
+    "react-cli-spinners": "2.0.0",
     "react-dom": "^16.1.1",
+    "react-router-dom": "4.2.2",
     "react-scripts": "1.0.17"
   },
   "scripts": {

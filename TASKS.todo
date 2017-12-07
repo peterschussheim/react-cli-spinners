@@ -1,6 +1,10 @@
+☐ MAKE ISSUES to close
+☐ commit new examples and deploy USING ISSUES and semantic versioning
 ☐ publish to NPM
+☐ update docs with new examples
+✔ fix bug with jitter when text changes @done (12/2/2017, 10:02:30 AM)
 ✔ setup correct builds for browser target @done (11/14/2017, 4:16:51 PM)
 ✔ cleanup examples @done (11/14/2017, 3:30:19 PM)
-  ☐ add usage examples
+  ✔ add usage examples @done (12/1/2017, 5:02:29 PM)
 ✔ Write README.md @done (2017-11-14 14:56:06)
 ✔ figure out how to ignore `.vscode' directory from git @done (2017-11-14 14:55:51)
