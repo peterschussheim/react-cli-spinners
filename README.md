@@ -6,9 +6,6 @@ Assorted text-based activity indicators for usage in React components, based on 
 
 [![Travis](https://img.shields.io/travis/peterschussheim/react-cli-spinners.svg?style=flat-square)](https://travis-ci.org/peterschussheim/react-cli-spinners)
 
-<!-- <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/QBvQQkqUs7HakSKkUvJpfRwq/peterschussheim/prop-styles'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/QBvQQkqUs7HakSKkUvJpfRwq/peterschussheim/prop-styles.svg' />
-</a> -->
 
 - [react-cli-spinners](#react-cli-spinners)
   - [Why](#why)
