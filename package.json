@@ -8,8 +8,9 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "deploy": "echo \"Error: no deploy script specified\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precommit": "lint-staged",
+    "lint": "eslint src",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "directories": {
     "example": "examples"
@@ -37,11 +38,18 @@
   },
   "devDependencies": {
     "babel-core": "6.26.0",
+    "babel-eslint": "8.0.3",
     "babel-plugin-external-helpers": "6.22.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
     "conventional-changelog-eslint": "0.2.1",
+    "eslint": "4.12.1",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.3.1",
+    "eslint-plugin-react": "7.5.1",
+    "lint-staged": "6.0.0",
+    "prettier": "1.9.1",
     "rollup": "0.51.5",
     "rollup-plugin-babel": "3.0.2",
     "rollup-plugin-commonjs": "8.2.6",
@@ -52,6 +60,12 @@
     "sr-release-notes-generator": "1.1.3"
   },
   "dependencies": {},
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "release": {
     "analyzeCommits": {
       "path": "sr-commit-analyzer",
