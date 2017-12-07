@@ -36,7 +36,7 @@ class Spinner extends React.Component {
 
   render() {
     const { spinner, frame } = this.state
-    return <span {...this.props}>{spinner.frames[frame]}&nbsp;</span>
+    return <div {...this.props}>{spinner.frames[frame]}</div>
   }
 }
 
