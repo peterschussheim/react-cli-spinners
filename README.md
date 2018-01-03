@@ -1,5 +1,7 @@
 # react-cli-spinners
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/peterschussheim/react-cli-spinners.svg)](https://greenkeeper.io/)
+
 Assorted text-based activity indicators for usage in React components, based on [cli-spinners](https://github.com/sindresorhus/cli-spinners).
 
 ---
