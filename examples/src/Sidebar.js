@@ -3,7 +3,6 @@ import Spinner from 'react-cli-spinners'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { examples } from './utils'
 import Button from './Button'
-
 function buildRoutes(obj) {
   let routes = []
   for (const path in obj) {
@@ -45,6 +44,7 @@ function createExamples(listOfSpinners) {
         type={k}
         key={i}
       />
+      <Button text={k} key={`${i-k}`} type={k}/>
     </div>
   ))
 }
@@ -53,7 +53,7 @@ function Home() {
   return (
     <p>
       Please browse the available sets in the sidebar to see different spinners
-      included in this package. Thank you for visiting!
+      included in this package.
     </p>
   )
 }
@@ -73,9 +73,6 @@ const SidebarExample = () => (
         <ul style={{ listStyleType: 'none', padding: 10 }}>
           <li>
             <Link to="/">home</Link>
-          </li>
-          <li>
-            <Link to="/buttons">buttons</Link>
           </li>
           <li>
             <Link to="/dots">dots</Link>
@@ -103,11 +100,6 @@ const SidebarExample = () => (
 
       <div style={{ flex: 1, width: '75%', padding: '10px' }}>
         <Route key="home" path="/" exact component={Home} />
-        <Route
-          key="buttons"
-          path="/buttons"
-          render={() => <Button text="Start" />}
-        />
         {routes.map((route, index) => (
           <Route
             key={index}
